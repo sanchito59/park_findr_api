@@ -2,7 +2,6 @@ class LocationsController < ApplicationController
 
     def index
         @locations = Location.all
-        binding.pry
         json_response(@locations)
     end
 

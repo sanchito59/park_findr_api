@@ -37,7 +37,7 @@ class ParksController < ApplicationController
     end
 
     def park_params
-      params.permit(:climate, :operating_hours, :dog_friendly, :activities, :national_park, :fees, :lodging, :camping)
+      params.permit(:name, :size, :climate, :operating_hours, :dog_friendly, :activities, :national_park, :fees, :lodging, :camping)
     end
 
   end
