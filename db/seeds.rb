@@ -9,7 +9,7 @@ class Seed
       rand(35..65).times do
         locations = []
         locations.push(Location.create!(
-          continent: "North America",
+          continent: ["Asia", "Africa", "North America", "South America", "Europe", "Australia"].sample,
           country: Faker::Address.country,
           latitude: Faker::Address.latitude,
           longitude: Faker::Address.longitude,
