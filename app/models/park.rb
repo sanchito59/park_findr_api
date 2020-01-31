@@ -1,3 +1,3 @@
-class Park < ApplicationController
+class Park < ApplicationRecord
     belongs_to :location
 end
