@@ -2,6 +2,7 @@ class LocationsController < ApplicationController
 
     def index
         @locations = Location.all
+        binding.pry
         json_response(@locations)
     end
 
@@ -29,6 +30,10 @@ class LocationsController < ApplicationController
     end
 
     private
+
+    def json_response(object, status = :ok)
+        render json: object, status: status
+      end
 
     def location_params
         params.permit(:continent, :country, :latitude, :longitude, :city, :community, :street_address)
