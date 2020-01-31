@@ -28,7 +28,7 @@ class Seed
                 :dog_friendly => Faker::Boolean.boolean,
                 :activities => ["hiking", "swimming", "running", "stargazing", "backpacking", "fishing", "spelunking", "soccer, football, basketball", "chess"].sample,
                 :national_park => Faker::Boolean.boolean,
-                :fees => Faker::Boolean.boolean,
+                :fees => [0, 0, 0, 0, 5, 10, 15, 20, 35].sample,
                 :lodging => Faker::Boolean.boolean,
                 :camping => Faker::Boolean.boolean,
                 :location_id => location.id
