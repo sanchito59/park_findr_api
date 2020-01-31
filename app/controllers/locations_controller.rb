@@ -33,7 +33,7 @@ class LocationsController < ApplicationController
 
     def json_response(object, status = :ok)
         render json: object, status: status
-      end
+    end
 
     def location_params
         params.permit(:continent, :country, :latitude, :longitude, :city, :community, :street_address)

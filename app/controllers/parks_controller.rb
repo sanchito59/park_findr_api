@@ -32,8 +32,12 @@ class ParksController < ApplicationController
   
     private
 
+    def json_response(object, status = :ok)
+        render json: object, status: status
+    end
+
     def park_params
       params.permit(:climate, :operating_hours, :dog_friendly, :activities, :national_park, :fees, :lodging, :camping)
     end
-    
+
   end
