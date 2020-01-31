@@ -6,7 +6,7 @@ class Seed
     end
   
     def generate_locations
-      rand(35..65).times do
+      rand(75..150).times do
         locations = []
         locations.push(Location.create!(
           continent: ["Asia", "Africa", "North America", "South America", "Europe", "Australia"].sample,
