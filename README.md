@@ -30,6 +30,8 @@ The Park table features columns for name, `climate`, `operating hours`, `activit
  4. Open directory contents by extracting/unzipping documents from folder.
  3. Make sure your system has `Ruby 2.6.5`, `Rails 5.2.4.1` or higher, and `NPM` installed.
  4. With your tools installed, and within the folder, run `bundle install`. Make sure all gems install correctly before moving on.
+ 5. The quickest way to set the project up once downloaded and bundled is to run `rake project_setup` this will complete the next 3 steps through a Rake task.
+ 5. **Follow the next 3 steps if you didn't run `rake project_setup`.** 
  5. Next run `rake db:create`, `rake db:migrate`, and `rake db:test:prepare`. Make sure all processes complete successfully.
  6. To seed the database with test information, run `rake db:seed`. This will fill the database with 75-150 locations and 3-15 parks for each of those locations.
  5. With [park_findr_api](https://github.com/sanchito59/park_finder_api.git) set up, run `rails s` or `rails server` and navigate to `localhost:3000` to use **Park Findr API**.
@@ -41,7 +43,9 @@ The Park table features columns for name, `climate`, `operating hours`, `activit
  2. Once the repository finishes downloading you will need to navigate to it in the terminal/command line.
  3. Make sure your system has `Ruby 2.6.5`, `Rails 5.2.4.1` or higher, and `NPM` installed.
  4. With your tools installed, and within the folder, run `bundle install`. Make sure all gems install correctly before moving on.
- 5. Next run `rake db:create`, `rake db:migrate`, and `rake db:test:prepare`. Make sure all processes complete successfully.
+ 5. The quickest way to set the project up once downloaded and bundled is to run `rake project_setup` this will complete the next 3 steps through a Rake task.
+ 5. **Follow the next 3 steps if you didn't run `rake project_setup`.** 
+ 6. Run `rake db:create`, `rake db:migrate`, and `rake db:test:prepare`. Make sure all processes complete successfully.
  6. To seed the database with test information, run `rake db:seed`. This will fill the database with 75-150 locations and 3-15 parks for each of those locations.
  5. With [park_findr_api](https://github.com/sanchito59/park_finder_api.git) set up, run `rails s` or `rails server` and navigate to `localhost:3000` to use **Park Findr API**.
  7. **For best results, download and configure [Park Findr](https://github.com/sanchito59/park_finder_front_end.git.). You can also make requests to `localhost:3000` with [Postman](https://www.getpostman.com/).**
