@@ -4,3 +4,13 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+desc 'Sets a project database up.'
+task :project_setup do
+    system('rake db:create')
+    system('rake db:migrate')
+    system('rake db:test:prepare')
+    system('bundle exec rspec:install')
+    system('rake db:seed')
+    system('rails s')
+end
