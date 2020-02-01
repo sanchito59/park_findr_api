@@ -52,7 +52,7 @@ The Park table features columns for name, `climate`, `operating hours`, `activit
 
 - - - -
 
-### Specifications:git
+### Specifications:
 
 |Behavior|Input|Output|
 |---|---|---|
