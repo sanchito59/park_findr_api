@@ -5,15 +5,15 @@
 
 **Park Findr API** is an API built with Ruby / Rails. It can be used with [Park Findr](https://github.com/sanchito59/park_finder_front_end.git), or you can use [Postman](https://www.getpostman.com/) to make requests to `localhost:3000` once **Park Findr API** is downloaded and configured. The API features full CRUD (Create, Read, Update, and Delete) functionality for both Locations and Parks.
 
-![screenshot of landing page for product website](https://i.imgur.com/pgWVWt6.png "read")
+![screenshot of landing page for location website](https://i.imgur.com/pgWVWt6.png "read")
 ## Location Table
-The Location table features columns for continent, country, longitude, latitude, city, community, and street address.
+The Location table features columns for `continent`, `country`, `longitude`, `latitude`, `city`, `community`, and `street address`.
 
 
 ![screenshot of location table](https://i.imgur.com/O9waQzI.png "read")
   
 ## Park Table
-The Park table features columns for name, climate, operating hours, activites, whether or not it is dog friendly, whether or not it is a National Park, fees, lodging, camping, and size.
+The Park table features columns for name, `climate`, `operating hours`, `activites`, whether or not it is `dog friendly`, whether or not it is a `National Park`, `fees`, `lodging`, `camping`, and `size`.
 
 ![screenshot of park table](https://i.imgur.com/NUjgyV4.png "read")
 - - - -
@@ -50,16 +50,17 @@ The Park table features columns for name, climate, operating hours, activites, w
 
 ### Specifications:
 
-<!-- |Behavior|Input|Output|
+|Behavior|Input|Output|
 |---|---|---|
-|(Read/GET)|User is on the homepage. |Homepage displays featured locations and navigation to view all locations. |
-|(Create/POST) User adds a product to the catalogue of locations. |'Vasiva HVAC Comp'|The corresponding pages now have the product added and so does the database. The user is shown a message to inform them of the successful creation.|
-|(Read/GET)|User is on the product page. |Product page displays a list of all locations. Included is the ability to create locations.|
-|(Update/PATCH) User changes the product. |'Fire System Alarms'|All pages reflect the changes and so does the database.|
-|(Create/POST) User adds a review to the product. |Reviews contain information such as author, review text, and rating.|The product page now has the review added and so does the database. The user is shown a message to inform them of successfully changes.|
-|(Update/PATCH) User changes the review's author. |'Michael Smith'|The product page now reflects the changes and so does the database. The user is shown a message to inform them of successful changes.|
-|(Delete/DELETE) The user removes a review from a product. |Review for 'Fire System Alarms' is deleted.|The product page now reflects the changes and so does the database. The user is shown a message to inform them of successful changes.|
-|(Delete/DELETE) The user deletes a product. |'Fire System Alarms'|The database and all corresponding pages no longer have the product.| -->
+|(Read/GET)| `localhost:3000` or `localhost:3000/locations` | API `GET` request displays all locations. |
+|(Create/POST)|`localhost:3000/locations` and all corresponding information, i.e. `continent`, `country`, `city`, `community`, `latitude` and `longitude`, and `steet address`.|The corresponding pages now have the location added and so does the database. The user is shown a message to inform them of the successful creation.|
+|(Read/GET)| `localhost:3000/locations/1` User is on the specific location page. |Location request returns just that specific location's information.|
+|(Update/PUT)|`localhost:3000/locations/1` 'New Continent'|If the API `PUT` request is successful, the database will reflect the changes and the user will be notified of a successful change.|
+|(Read/GET) |`localhost:3000/locations/1/parks`|The user makes a `GET` request and returned is a list of all parks associated with that location.|
+|(Read/GET)|`localhost:3000/locations/1/parks/1`|The user makes a `GET` request to access the specific information of a particular park.|
+|(Update/PUT)|`localhost:3000/locations/1/parks/1` and 'New Park Name'|The location page now reflects the changes and so does the database. The user is shown a message to inform them of successful changes to the park.|
+|(Delete/DELETE)|`localhost:3000/locations/1/parks/1`|The user makes a `DELETE` request to the API, deleting `park 1` from `location 1`.|
+|(Delete/DELETE)|`localhost:3000/locations/1`|The user makes a `DELETE` request to the API, deleting `location 1`.|
 - - - -
 
 ### Technologies Used
