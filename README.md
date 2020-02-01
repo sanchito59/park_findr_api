@@ -3,7 +3,7 @@
 ## By **Chris Sanchez**
 
 
-**Park Findr API** is an API built with Ruby / Rails. It can be used with [Park Findr](https://github.com/sanchito59/park_finder_front_end.git), or you can use [Postman](https://www.getpostman.com/) to make requests to `localhost:3000` once **Park Findr API** is downloaded and configured. The API features full CRUD (Create, Read, Update, and Delete) functionality for both Locations and Parks.
+**Park Findr API** is an API built with Ruby / Rails. It can be used with [Park Findr](https://github.com/sanchito59/park_finder_front_end.git), or you can use [Postman](https://www.getpostman.com/) to make requests to `localhost:3000` once **Park Findr API** is downloaded and configured. The API features full CRUD (Create, Read, Update, and Delete) functionality for both Locations and Parks. To make calls to the API use `GET`, `CREATE`, `PUT`, and `DELETE`. All routes follow REST naming conventions, i.e. `localhost:3000/locations/1/parks/1` where `parks` are nested in the route through `locations`.
 
 ![screenshot of landing page for location website](https://i.imgur.com/pgWVWt6.png "read")
 ## Location Table
@@ -48,7 +48,7 @@ The Park table features columns for name, `climate`, `operating hours`, `activit
 
 - - - -
 
-### Specifications:
+### Specifications:git
 
 |Behavior|Input|Output|
 |---|---|---|
