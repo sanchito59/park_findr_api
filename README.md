@@ -3,14 +3,18 @@
 ## By **Chris Sanchez**
 
 
-**Park Findr API** description... to be used with [Park Findr](https://github.com/sanchito59/park_finder_front_end.git)
+**Park Findr API** is an API built with Ruby / Rails. It can be used with [Park Findr](https://github.com/sanchito59/park_finder_front_end.git), or you can use [Postman](https://www.getpostman.com/) to make requests to `localhost:3000` once **Park Findr API** is downloaded and configured. The API features full CRUD (Create, Read, Update, and Delete) functionality for both Locations and Parks.
 
 ![screenshot of landing page for product website](https://i.imgur.com/pgWVWt6.png "read")
+## Location Table
+The Location table features columns for continent, country, longitude, latitude, city, community, and street address.
 
 
 ![screenshot of location table](https://i.imgur.com/O9waQzI.png "read")
   
-    
+## Park Table
+The Park table features columns for name, climate, operating hours, activites, whether or not it is dog friendly, whether or not it is a National Park, fees, lodging, camping, and size.
+
 ![screenshot of park table](https://i.imgur.com/NUjgyV4.png "read")
 - - - -
 ### Setup/Installation Requirements
